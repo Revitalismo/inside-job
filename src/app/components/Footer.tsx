@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export function Footer() {
     return (
-        <footer className="py-8 px-4 md:px-12 min-h-[450px] w-full bg-primary-700 grid grid-flow-col justify-self-end gap-x-6 gap-y-8 border-b-[1.5px] border-primary-600 bg-primary-600">
+        <footer className="py-8 px-4 md:px-12 min-h-[450px] w-full bg-primary-700 grid grid-flow-col justify-self-end gap-x-6 gap-y-8 border-b-[1.5px] border-primary-600 bg-primary-600 text-sm sm:text-base">
             
             <section className="flex flex-col gap-y-4 row-start-1 row-end-1 col-start-1 col-end-1">
                 <Image 
