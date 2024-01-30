@@ -17,8 +17,14 @@ export function TeamCard({ name, role }: TeamCardProps) {
         "Muhamad Faisal": faisalPhoto,
         "Bujangkuu": bujangPhoto
     };
+    const teamPositionMap = {
+        "Achmad Julian": "top-[-16px] left-[-10px]",       
+        "Weli Sagita": "top-[60px] sm:top-[10px] right-[-10px]",
+        "Muhamad Faisal": "bottom-[50px] left-[-10px]",
+        "Bujangkuu": "bottom-[-20px] right-[-10px]"
+    };
     return (
-        <article className="w-fit min-w-[180px] sm:min-w-[250px] max-w-[270px] py-2.5 sm:py-3 pl-2.5 sm:pl-4 pr-3 sm:pr-3 bg-primary-600 rounded-md flex items-center gap-x-3 sm:gap-x-4 border-primary-500 border-[1.5px]">
+        <article className={`w-fit min-w-[180px] sm:min-w-[250px] max-w-[270px] py-2.5 sm:py-3 pl-2.5 sm:pl-4 pr-3 sm:pr-3 bg-primary-600 rounded-md flex items-center gap-x-3 sm:gap-x-4 border-primary-500 border-[1.5px] absolute ${teamPositionMap[name]}`}>
             <Image 
                 alt={`${name} photo`}
                 src={teamPhotoMap[name]}
