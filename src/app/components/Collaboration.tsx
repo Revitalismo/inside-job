@@ -16,7 +16,7 @@ export function Collaboration({ clientName }: { clientName: client }) {
         "Umat Untuk Semesta": umatUntukSemesta
     };
     return (
-        <section className="py-2.5 px-4 bg-[rgba(10,67,92,0.50)] flex gap-x-4 items-center backdrop-blur-sm border-primary-500 border-[1.5px] rounded-lg">
+        <section className="w-fit py-2.5 px-4 bg-[rgba(10,67,92,0.50)] absolute top-0 flex gap-x-4 items-center backdrop-blur-sm border-primary-500 border-[1.5px] rounded-lg">
             <Image
                 src={logoInsideJob}
                 alt="Logo Inside Job"
