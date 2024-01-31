@@ -9,7 +9,7 @@ import { Awards } from "./components/Awards";
 
 export default function Home() {
   return (
-    <main className="px-4 lg:px-12">
+    <main className="px-4 lg:px-12 bg-primary-700">
       <HeroSection />
     </main>
   );
@@ -18,11 +18,11 @@ export default function Home() {
 function HeroSection() {
   return (
     <section className="pt-14 flex flex-col gap-6 items-center xl:flex-row">
-      <section className="flex flex-col gap-y-6 items-center">
+      <section className="w-full max-w-[660px] flex flex-col gap-y-6 items-center xl:items-start">
 
         <article className="flex flex-col gap-y-4">
-          <h1 className="lg:max-w-[450px] text-[25px] leading-[40px] text-center lg:text-left sm:text-[39px] text-neutral-0 font-medium sm:leading-[56px]">Wujudkan Inovasi Digital mu di Inside Job</h1>
-          <p className="text-sm text-center lg:text-left sm:text-base text-primary-0 leading-8">Hubungi kami sekarang dan dapatkan konsultasi gratis dari para ahli kami</p>
+          <h1 className="xl:max-w-[450px] text-[25px] leading-[40px] text-center xl:text-left sm:text-[39px] text-neutral-0 font-medium sm:leading-[56px]">Wujudkan Inovasi Digital mu di Inside Job</h1>
+          <p className="text-sm text-center xl:text-left sm:text-base text-primary-0 leading-8">Hubungi kami sekarang dan dapatkan konsultasi gratis dari para ahli kami</p>
         </article>
 
         <Button
@@ -33,7 +33,7 @@ function HeroSection() {
         />
       </section>
 
-      <section className="w-full py-6 relative flex flex-col md:flex-row gap-4 items-center justify-center">
+      <section className="w-full max-w-[660px] py-6 relative flex flex-col md:flex-row gap-4 items-center justify-center">
         <Collaboration
             clientName="Umat Untuk Semesta"
         />
