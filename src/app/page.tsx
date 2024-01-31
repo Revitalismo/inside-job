@@ -9,12 +9,15 @@ import { Button } from "./components/Button";
 import { Collaboration } from "./components/Collaboration";
 import { Awards } from "./components/Awards";
 import { TeamCard } from "./components/TeamCard";
+import { ServiceCard } from "./components/ServiceCard";
+import { title } from "process";
 
 export default function Home() {
   return (
-    <main className="px-4 lg:px-12 bg-primary-700">
+    <main className="px-4 lg:px-12 bg-primary-700 flex flex-col gap-y-14 md:gap-y-28">
       <HeroSection />
       <CompanyDescription />
+      <OurServices />
     </main>
   );
 }
@@ -71,7 +74,7 @@ function CompanyDescription() {
         <Image
           alt="Inside Job Scene"
           src={insideJobScene}
-          className="h-full object-cover"
+          className="h-full object-cover rounded-lg border-primary-300 border-[1px]"
         />
 
         <TeamCard 
@@ -97,10 +100,75 @@ function CompanyDescription() {
 
       <article className="flex flex-col gap-y-1.5 lg:max-w-[800px]">
         <h1 className="text-[25px] sm:text-[39px] text-neutral-0 text-center xl:text-left font-medium">Inside Job</h1>
-        <p className="text:sm sm:text-base sm:leading-8 text-primary-0 text-justify xl:text-left leading-7">
-          Inside Job Merupakan sebuah Kolektif yang bergerak di bidang penyedia layanan Pembuatan website, jasa  SEO, Design UI/UX, Migrasi Website dan lain-lain. Kami berkomitmen untuk memberikan pelayanan dan dukungan yang luar biasa supaya situs web Anda lebih menonjol dari pesaing dan membantu bisnis Anda lebih berkembang.
+        <p className="text-sm sm:text-base sm:leading-8 text-primary-0 text-justify xl:text-left leading-7">
+          Inside Job merupakan sebuah Kolektif yang bergerak di bidang penyedia layanan Pembuatan website, jasa  SEO, Design UI/UX, Migrasi Website dan lain-lain. Kami berkomitmen untuk memberikan pelayanan dan dukungan yang luar biasa supaya situs web Anda lebih menonjol dari pesaing dan membantu bisnis Anda lebih berkembang.
         </p>
       </article>
+    </section>
+  );
+}
+
+function OurServices() {
+  const servicesMap = [
+    {
+      title: "Migrasi website",
+      description: "Pindahkan website Anda dengan mudah dan aman menggunakan layanan migrasi web kami.",
+      navigateTo: "/web-migration"
+    },
+    {
+      title: "Pembuatan Website",
+      description: "Website dengan tampilan yang menarik, responsif dan dapat disesuaikan dengan kebutuhan bisnis Anda.",
+      navigateTo: "/web-migration"
+    },
+    {
+      title: "Design UI/UX",
+      description: "Desain UI/UX menarik dan intuitif untuk pengalaman pengguna yang lebih baik.",
+      navigateTo: "/web-migration"
+    },
+    {
+      title: "SEO",
+      description: "Optimalkan peringkat dan visibilitas website Anda dengan layanan SEO kami.",
+      navigateTo: "/web-migration"
+    },
+    {
+      title: "Quality Assurance",
+      description: "Kami membantu memastikan bahwa produk atau layanan Anda mencapai standar kualitas tertinggi.",
+      navigateTo: "/web-migration"
+    },
+    {
+      title: "Business Analysis",
+      description: "Layanan Business Analysis kami membantu bisnis Anda memahami dan mengoptimalkan operasionalnya.",
+      navigateTo: "/web-migration"
+    },
+    {
+      title: "Business Development",
+      description: "Kami menyediakan layanan Business Development yang bertujuan untuk mengembangkan bisnis Anda.",
+      navigateTo: "/web-migration"
+    },
+    {
+      title: "IT Support",
+      description: "Layanan IT Support kami hadir untuk menjaga kelancaran operasional teknologi informasi Anda.",
+      navigateTo: "/web-migration"
+    }
+  ];
+  return (
+    <section className="flex flex-col gap-y-4 items-center">
+      <h2 className="text-[25px] sm:text-[31px] text-neutral-0 text-center xl:text-left font-medium">Layanan kami</h2>
+
+      <section className="flex flex-wrap gap-4 items-center justify-center">
+      {
+        servicesMap.map((service, index) => {
+          return (
+            <ServiceCard
+              title={service.title}
+              description={service.description}
+              navigateTo={service.navigateTo}
+              key={service.title + index}
+            />
+          );
+        })
+      }
+      </section>
     </section>
   );
 }
