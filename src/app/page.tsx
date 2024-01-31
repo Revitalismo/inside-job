@@ -41,7 +41,7 @@ function HeroSection() {
         <Image
           alt="Pilah Pilih Mobile Mockup"
           src={pilahPilihMobile}
-          className="pt-2 max-h-[400px] max-w-[200px] object-cover object-top rounded-lg overflow-hidden"
+          className="w-full max-h-[400px] max-w-[200px] object-cover object-top rounded-lg overflow-hidden"
         />
 
         <Image
