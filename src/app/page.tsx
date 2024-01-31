@@ -10,7 +10,6 @@ import { Collaboration } from "./components/Collaboration";
 import { Awards } from "./components/Awards";
 import { TeamCard } from "./components/TeamCard";
 import { ServiceCard } from "./components/ServiceCard";
-import { title } from "process";
 
 export default function Home() {
   return (
@@ -70,7 +69,7 @@ function HeroSection() {
 function CompanyDescription() {
   return (
     <section className="flex flex-col gap-8 xl:flex-row items-center">
-      <section className="w-full lg:max-w-[800px] lg:min-w-[600px] h-[300px] relative">
+      <section className="w-full md:max-w-[800px] lg:min-w-[600px] h-[300px] relative">
         <Image
           alt="Inside Job Scene"
           src={insideJobScene}
@@ -98,8 +97,8 @@ function CompanyDescription() {
         />
       </section>
 
-      <article className="flex flex-col gap-y-1.5 lg:max-w-[800px]">
-        <h1 className="text-[25px] sm:text-[39px] text-neutral-0 text-center xl:text-left font-medium">Inside Job</h1>
+      <article className="flex flex-col gap-y-1.5 md:max-w-[800px]">
+        <h2 className="text-[25px] sm:text-[31px] text-neutral-0 text-center xl:text-left font-medium">Inside Job</h2>
         <p className="text-sm sm:text-base sm:leading-8 text-primary-0 text-justify xl:text-left leading-7">
           Inside Job merupakan sebuah Kolektif yang bergerak di bidang penyedia layanan Pembuatan website, jasa  SEO, Design UI/UX, Migrasi Website dan lain-lain. Kami berkomitmen untuk memberikan pelayanan dan dukungan yang luar biasa supaya situs web Anda lebih menonjol dari pesaing dan membantu bisnis Anda lebih berkembang.
         </p>
