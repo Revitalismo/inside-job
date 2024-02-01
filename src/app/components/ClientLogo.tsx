@@ -38,7 +38,7 @@ export function ClientLogo({ clientName, navigateTo }: ClientLogoProps) {
             <Image 
                 src={clientMap[clientName]}
                 alt={`${clientName} logo`}
-                className="h-[45px] sm:h-[72px] object-contain"
+                className="h-[45px] w-[90px] sm:h-[72px] sm:[180px] object-contain"
             />
         </Link>
     );
