@@ -1,0 +1,16 @@
+.scroll-animation {
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name: scrollIn;
+}
+
+@keyframes scrollIn {
+    0% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(calc(-100vw + -1200px));
+    }
+}
