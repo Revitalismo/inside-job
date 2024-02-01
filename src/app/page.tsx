@@ -1,5 +1,4 @@
 import services from "@/data/services.json";
-
 import insideJobScene from "@/pictures/Inside Job Scene.webp";
 
 import pilahPilihMobile from "@/pictures/mockup/Homepage - Pilahpilih Mobile.webp";
@@ -7,18 +6,21 @@ import pilahPilihDesktop from "@/pictures/mockup/Homepage - Pilahpilih Desktop.w
 
 import Image from "next/image";
 
-import { Button } from "./components/Button";
-import { Collaboration } from "./components/Collaboration";
-import { Awards } from "./components/Awards";
-import { TeamCard } from "./components/TeamCard";
-import { ServiceCard } from "./components/ServiceCard";
+import { Button } from "@/components/Button";
+import { Collaboration } from "@/components/Collaboration";
+import { Awards } from "@/components/Awards";
+import { TeamCard } from "@/components/TeamCard";
+import { ServiceCard } from "@/components/ServiceCard";
+
+import { OurClients } from "./sections/OurClients";
 
 export default function Home() {
   return (
-    <main className="px-4 lg:px-12 bg-primary-700 flex flex-col gap-y-14 md:gap-y-28">
+    <main className="px-4 lg:px-12 bg-primary-700 flex flex-col gap-y-14 md:gap-y-28 overflow-hidden">
       <HeroSection />
       <CompanyDescription />
       <OurServices />
+      <OurClients />
     </main>
   );
 }
