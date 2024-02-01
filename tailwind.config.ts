@@ -29,7 +29,7 @@ const config: Config = {
     colors: {
       "primary": {
         "0": "#D1EEFA",
-        "100": "#A2DCF5",
+        "100": "#A3DCF5",
         "200": "#5DC2EE",
         "300": "#18A9E7",
         "400": "#1387B9",

@@ -23,7 +23,7 @@ export default function Home() {
 
 function HeroSection() {
   return (
-    <section className="pt-14 flex flex-col gap-6 items-center xl:flex-row">
+    <section className="pt-14 flex flex-col gap-6 items-center justify-between xl:flex-row">
       <section className="w-full max-w-[660px] flex flex-col gap-y-6 items-center xl:items-start">
 
         <article className="flex flex-col gap-y-4">
@@ -97,7 +97,7 @@ function CompanyDescription() {
         />
       </section>
 
-      <article className="flex flex-col gap-y-1.5 md:max-w-[800px]">
+      <article className="flex flex-col gap-y-1.5 md:max-w-[660px]">
         <h2 className="text-[25px] sm:text-[31px] text-neutral-0 text-center xl:text-left font-medium">Inside Job</h2>
         <p className="text-sm sm:text-base sm:leading-8 text-primary-0 text-justify xl:text-left leading-7">
           Inside Job merupakan sebuah Kolektif yang bergerak di bidang penyedia layanan Pembuatan website, jasa  SEO, Design UI/UX, Migrasi Website dan lain-lain. Kami berkomitmen untuk memberikan pelayanan dan dukungan yang luar biasa supaya situs web Anda lebih menonjol dari pesaing dan membantu bisnis Anda lebih berkembang.
@@ -151,10 +151,10 @@ function OurServices() {
     }
   ];
   return (
-    <section className="flex flex-col gap-y-4 items-center">
+    <section className="flex flex-col gap-6 md:gap-12 items-center">
       <h2 className="text-[25px] sm:text-[31px] text-neutral-0 text-center xl:text-left font-medium">Layanan kami</h2>
 
-      <section className="flex flex-wrap gap-4 items-center justify-center">
+      <section className="max-w-[1200px] flex flex-wrap gap-4 md:gap-6 md:gap-6 items-center justify-center">
       {
         servicesMap.map((service, index) => {
           return (
