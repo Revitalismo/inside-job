@@ -12,7 +12,7 @@ interface RecentWorkCardProps {
 
 export function RecentWorkCard({ title, image, description, navigateTo }: RecentWorkCardProps) {
     return (
-        <article className={`w-full sm:min-w-[600px] max-w-[328px] sm:max-w-[600px] min-h-[320px] sm:min-h-[450px] relative border-primary-500 border-[1.5px] rounded-2xl ${image}`}>
+        <article className={`w-full sm:min-w-[600px] max-w-[328px] sm:max-w-[600px] min-h-[320px] sm:min-h-[450px] relative border-primary-500 border-[1.5px] rounded-2xl ${image} bg-[${image}]`}>
             <section className="w-full px-4 pt-2.5 pb-6 absolute bottom-0 flex flex-col gap-y-3 sm:gap-y-4 bg-[rgba(5,34,46,0.60)] backdrop-blur-sm">
 
                 <article className="flex flex-col gap-y-1.5">
@@ -22,6 +22,7 @@ export function RecentWorkCard({ title, image, description, navigateTo }: Recent
 
                 <Link 
                     href={navigateTo ? navigateTo : "/"}
+                    target="blank"
                     className="flex items-center gap-x-1.5"
                 >
                     <h4 className="text-sm sm:text-base text-medium text-primary-0">Lihat selengkapnya</h4>
