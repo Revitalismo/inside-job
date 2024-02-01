@@ -10,17 +10,15 @@ import theKasablankaHall from "@/app/pictures/The Kasablanka Hall.webp";
 import wayangBistro from "@/app/pictures/Wayang Bistro.webp";
 
 import Link from "next/link";
-import Image from "next/image";
-
-type client = "Dietplastik Indonesia" | "Umat Untuk Semesta" | "Global Data" | "Cyber Link" | "Alcorprime" | "Musawarah Peduli" | "Sutera Hall" | "Toyib Travel" | "The Kasablanka Hall" | "Wayang Bistro";
+import Image, { StaticImageData } from "next/image";
 
 interface ClientLogoProps {
-    clientName: client;
+    clientName: string;
     navigateTo?: string;
 }
 
 export function ClientLogo({ clientName, navigateTo }: ClientLogoProps) {
-    const clientMap = {
+    const clientMap: Record<string, StaticImageData> = {
         "Dietplastik Indonesia": dietPlastikIndonesia,
         "Umat Untuk Semesta": umatUntukSemesta,
         "Global Data": globalData,
