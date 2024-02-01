@@ -33,7 +33,8 @@ export function ClientLogo({ clientName, navigateTo }: ClientLogoProps) {
     return (
         <Link
             href={navigateTo ? navigateTo : "/"}
-            className="h-[60px] w-[120px] sm:h-[100px] sm:w-[250px] bg-primary-600 flex items-center justify-center rounded-lg border-primary-500 border-[1.5px]"
+            target="blank"
+            className="h-[60px] min-w-[120px] sm:h-[100px] sm:min-w-[250px] bg-primary-600 flex items-center justify-center rounded-lg border-primary-500 border-[1.5px]"
         >
             <Image 
                 src={clientMap[clientName]}
