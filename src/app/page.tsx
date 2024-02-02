@@ -13,6 +13,7 @@ import { TeamCard } from "@/components/TeamCard";
 import { ServiceCard } from "@/components/ServiceCard";
 
 import { OurClients } from "./sections/OurClients";
+import { RecentWorks } from "./sections/RecentWorks";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <CompanyDescription />
       <OurServices />
       <OurClients />
+      <RecentWorks />
     </main>
   );
 }
