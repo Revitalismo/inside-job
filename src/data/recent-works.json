@@ -1,13 +1,13 @@
 [
     {
         "title": "Dietplastik Indonesia",
-        "image": "diet-kantong-plastik",
+        "image": "diet-plastik-indonesia",
         "description": "Kami melakukan migrasi website Dietplastik Indonesia dan merubah tampilannya ke yang baru.",
         "navigateTo": "https://plasticdiet.id"
     },
     {
         "title": "Umat Untuk Semesta",
-        "image": "pilah-pilih",
+        "image": "pilahpilih",
         "description": "Kami melakukan pembuatan website survey yang bernama PilahPilih",
         "navigateTo": "https://pilahpilih.id/"
     },
