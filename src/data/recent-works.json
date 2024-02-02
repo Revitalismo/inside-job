@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Dietplastik Indonesia",
+        "image": "diet-plastik-indonesia",
+        "description": "Kami melakukan migrasi website Dietplastik Indonesia dan merubah tampilannya ke yang baru.",
+        "navigateTo": "https://plasticdiet.id"
+    },
+    {
+        "title": "Umat Untuk Semesta",
+        "image": "pilahpilih",
+        "description": "Kami melakukan pembuatan website survey yang bernama PilahPilih",
+        "navigateTo": "https://pilahpilih.id/"
+    },
+    {
+        "title": "Toyib Travel",
+        "image": "toyib-travel",
+        "description": "Kami melakukan pembuatan company page Toyib Travel.",
+        "navigateTo": "https://toyibtravel.co.id"
+    },
+    {
+        "title": "Alcorprime",
+        "image": "alcorprime",
+        "description": "Kami melakukan pembuatan company page Alcoprime.",
+        "navigateTo": "https://alcorprime.com"
+    },
+    {
+        "title": "The Kasablanka",
+        "image": "the-kasablanka",
+        "description": "Kami melakukan pembuatan company page The Kasablanka.",
+        "navigateTo": "https://thekasablanka.com"
+    },
+    {
+        "title": "Wayang Bistro",
+        "image": "wayang-distro",
+        "description": "Kami melakukan pembuatan company page Wayang Distro.",
+        "navigateTo": "https://wayangbistro.com"
+    },
+    {
+        "title": "GlobalData",
+        "image": "global-data",
+        "description": "Kami melakukan pembuatan company page GlobalData.",
+        "navigateTo": "https://www.globaldata.co.id"
+    },
+    {
+        "title": "Sutera Hall",
+        "image": "sutera-hall",
+        "description": "Kami melakukan pembuatan company page Sutera Hall.",
+        "navigateTo": "https://suterahall.com"
+    },
+    {
+        "title": "musyawarah-peduli",
+        "image": "diet-kantong-plastik",
+        "description": "Kami melakukan pembuatan company page Musyawarah Peduli.",
+        "navigateTo": "https://musawarahpeduli.com"
+    }
+]

@@ -1,3 +1,4 @@
+import services from "@/data/services.json";
 import insideJobScene from "@/pictures/Inside Job Scene.webp";
 
 import pilahPilihMobile from "@/pictures/mockup/Homepage - Pilahpilih Mobile.webp";
@@ -5,18 +6,23 @@ import pilahPilihDesktop from "@/pictures/mockup/Homepage - Pilahpilih Desktop.w
 
 import Image from "next/image";
 
-import { Button } from "./components/Button";
-import { Collaboration } from "./components/Collaboration";
-import { Awards } from "./components/Awards";
-import { TeamCard } from "./components/TeamCard";
-import { ServiceCard } from "./components/ServiceCard";
+import { Button } from "@/components/Button";
+import { Collaboration } from "@/components/Collaboration";
+import { Awards } from "@/components/Awards";
+import { TeamCard } from "@/components/TeamCard";
+import { ServiceCard } from "@/components/ServiceCard";
+
+import { OurClients } from "./sections/OurClients";
+import { RecentWorks } from "./sections/RecentWorks";
 
 export default function Home() {
   return (
-    <main className="px-4 lg:px-12 bg-primary-700 flex flex-col gap-y-14 md:gap-y-28">
+    <main className="px-4 lg:px-12 bg-primary-700 flex flex-col gap-y-14 md:gap-y-28 overflow-hidden">
       <HeroSection />
       <CompanyDescription />
       <OurServices />
+      <OurClients />
+      <RecentWorks />
     </main>
   );
 }
@@ -108,55 +114,13 @@ function CompanyDescription() {
 }
 
 function OurServices() {
-  const servicesMap = [
-    {
-      title: "Migrasi website",
-      description: "Pindahkan website Anda dengan mudah dan aman menggunakan layanan migrasi web kami.",
-      navigateTo: "/web-migration"
-    },
-    {
-      title: "Pembuatan Website",
-      description: "Website dengan tampilan yang menarik, responsif dan dapat disesuaikan dengan kebutuhan bisnis Anda.",
-      navigateTo: "/web-migration"
-    },
-    {
-      title: "Design UI/UX",
-      description: "Desain UI/UX menarik dan intuitif untuk pengalaman pengguna yang lebih baik.",
-      navigateTo: "/web-migration"
-    },
-    {
-      title: "SEO",
-      description: "Optimalkan peringkat dan visibilitas website Anda dengan layanan SEO kami.",
-      navigateTo: "/web-migration"
-    },
-    {
-      title: "Quality Assurance",
-      description: "Kami membantu memastikan bahwa produk atau layanan Anda mencapai standar kualitas tertinggi.",
-      navigateTo: "/web-migration"
-    },
-    {
-      title: "Business Analysis",
-      description: "Layanan Business Analysis kami membantu bisnis Anda memahami dan mengoptimalkan operasionalnya.",
-      navigateTo: "/web-migration"
-    },
-    {
-      title: "Business Development",
-      description: "Kami menyediakan layanan Business Development yang bertujuan untuk mengembangkan bisnis Anda.",
-      navigateTo: "/web-migration"
-    },
-    {
-      title: "IT Support",
-      description: "Layanan IT Support kami hadir untuk menjaga kelancaran operasional teknologi informasi Anda.",
-      navigateTo: "/web-migration"
-    }
-  ];
   return (
     <section className="flex flex-col gap-6 md:gap-12 items-center">
       <h2 className="text-[25px] sm:text-[31px] text-neutral-0 text-center xl:text-left font-medium">Layanan kami</h2>
 
       <section className="max-w-[1200px] flex flex-wrap gap-4 md:gap-6 md:gap-6 items-center justify-center">
       {
-        servicesMap.map((service, index) => {
+        services.map((service, index) => {
           return (
             <ServiceCard
               title={service.title}

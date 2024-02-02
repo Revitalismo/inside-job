@@ -11,19 +11,7 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        
-        // this background images only can be used by component
-        "diet-kantong-plastik": 'url(./../pictures/diet-plastik-indonesia.webp)',
-        "alcorprime": 'url(./../pictures/alcorprime.webp)',
-        "cyber-link": 'url(./../pictures/cyber-link.webp)',
-        "global-data": 'url(./../pictures/global-data.webp)',
-        "musyawarah-peduli": 'url(./../pictures/musyawarah-peduli.webp)',
-        "pilahpilih": 'url(./../pictures/pilahpilih.webp)',
-        "sutera-hall": 'url(./../pictures/sutera-hall.webp)',
-        "the-kasablanka": 'url(./../pictures/the-kasablanka.webp)',
-        "toyib-travel": 'url(./../pictures/toyib-travel.webp)',
-        "wayang-distro": 'url(./../pictures/wayang-distro.webp)'
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
       },
     },
     colors: {

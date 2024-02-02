@@ -10,17 +10,15 @@ import theKasablankaHall from "@/app/pictures/The Kasablanka Hall.webp";
 import wayangBistro from "@/app/pictures/Wayang Bistro.webp";
 
 import Link from "next/link";
-import Image from "next/image";
-
-type client = "Dietplastik Indonesia" | "Umat Untuk Semesta" | "Global Data" | "Cyber Link" | "Alcorprime" | "Musawarah Peduli" | "Sutera Hall" | "Toyib Travel" | "The Kasablanka Hall" | "Wayang Bistro";
+import Image, { StaticImageData } from "next/image";
 
 interface ClientLogoProps {
-    clientName: client;
+    clientName: string;
     navigateTo?: string;
 }
 
 export function ClientLogo({ clientName, navigateTo }: ClientLogoProps) {
-    const clientMap = {
+    const clientMap: Record<string, StaticImageData> = {
         "Dietplastik Indonesia": dietPlastikIndonesia,
         "Umat Untuk Semesta": umatUntukSemesta,
         "Global Data": globalData,
@@ -35,12 +33,13 @@ export function ClientLogo({ clientName, navigateTo }: ClientLogoProps) {
     return (
         <Link
             href={navigateTo ? navigateTo : "/"}
-            className="h-[60px] w-[120px] sm:h-[100px] sm:w-[250px] bg-primary-600 flex items-center justify-center rounded-lg border-primary-500 border-[1.5px]"
+            target="blank"
+            className="h-[60px] min-w-[120px] sm:h-[100px] sm:min-w-[250px] bg-primary-600 flex items-center justify-center rounded-lg border-primary-500 border-[1.5px]"
         >
             <Image 
                 src={clientMap[clientName]}
                 alt={`${clientName} logo`}
-                className="h-[45px] sm:h-[72px] object-contain"
+                className="h-[45px] w-[90px] sm:h-[72px] sm:[180px] object-contain"
             />
         </Link>
     );

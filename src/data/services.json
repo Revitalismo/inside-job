@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Migrasi website",
+        "description": "Pindahkan website Anda dengan mudah dan aman menggunakan layanan migrasi web kami.",
+        "navigateTo": "/service/web-migration"
+    },
+    {
+        "title": "Pembuatan Website",
+        "description": "Website dengan tampilan yang menarik, responsif dan dapat disesuaikan dengan kebutuhan bisnis Anda.",
+        "navigateTo": "/service/web-migration"
+    },
+    {
+        "title": "Design UI/UX",
+        "description": "Desain UI/UX menarik dan intuitif untuk pengalaman pengguna yang lebih baik.",
+        "navigateTo": "/service/design-uiux"
+    },
+    {
+        "title": "SEO",
+        "description": "Optimalkan peringkat dan visibilitas website Anda dengan layanan SEO kami.",
+        "navigateTo": "/service/seo"
+    },
+    {
+        "title": "Quality Assurance",
+        "description": "Kami membantu memastikan bahwa produk atau layanan Anda mencapai standar kualitas tertinggi.",
+        "navigateTo": "/service/quality-assurance"
+    },
+    {
+        "title": "Business Analysis",
+        "description": "Layanan Business Analysis kami membantu bisnis Anda memahami dan mengoptimalkan operasionalnya.",
+        "navigateTo": "/service/business-analysis"
+    },
+    {
+        "title": "Business Development",
+        "description": "Kami menyediakan layanan Business Development yang bertujuan untuk mengembangkan bisnis Anda.",
+        "navigateTo": "/service/business-development"
+    },
+    {
+        "title": "IT Support",
+        "description": "Layanan IT Support kami hadir untuk menjaga kelancaran operasional teknologi informasi Anda.",
+        "navigateTo": "/service/it-support"
+    }
+]
